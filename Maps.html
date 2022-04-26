@@ -3,8 +3,9 @@
     <a href="introduce.html">Introduce</a>
     <a href="Maps.html">Google maps</a>
     </div>
-  <img src="Logo.png" width="165" height="60" />
-  </div>
+  <img src="Logo.png" width="200" height="100" />
+  
+</div>
   <div class="row">
     <div class="leftcolumn">
       <div class="card">
@@ -21,5 +22,51 @@
   
           <img src="map.png" width="500" height="450">
           <link rel="stylesheet" href="./Maps.css">
-          <p align="center">Jenner</p>
+         
+<!DOCTYPE html>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+
+<h2 class="w3-center">Manual Slideshow</h2>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="11.png" style="width:100%">
+  <img class="mySlides" src="22.png" style="width:100%">
+  <img class="mySlides" src="33.png" style="width:100%">
+  <img class="mySlides" src="44.png" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</body>
+</html>
+<p align="center">Jenner</p>
 <p align="center">ZhangYu</p>
